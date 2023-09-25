@@ -61,6 +61,7 @@ header p{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 20px;
     padding: 70px 0;    
 }
 
@@ -154,5 +155,67 @@ header p{
 }
 
 .notInPage{
-    background-color: #a1a1a1;;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.notInPage:hover{
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+
+/* Fifht section */
+
+#phone-number::-webkit-inner-spin-button{
+    display: none;
+}
+
+
+#form-section{
+    text-align: center;
+    margin: 30px 0;
+}
+
+#form-section h2{
+    margin: 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.default-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.default-form input{
+    background-color: #EAECE5;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px 0;
+
+    width: 400px;
+}
+
+.default-form input[type="submit"]{
+    background-color: #247BA0;
+    border: none;
+    outline: none;
+    width: 350px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 16px;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.default-form button:hover{
+    transform: translateY(-7px);
 }
