@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header{
+    background-image: url(assets/images/header-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
+}
+
+#logo{
+    margin: 50px 0 0 50px;
+}
+
+h1{
+    margin: 70px 0 0 220px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+header p{
+    margin: 30px 0 0 220px;
+    padding-bottom: 100px;
+}
+
+/* Second Section */
+
+#merchan{
+    background-color: #EAECE5;
+}
+
+.merchan-center{
+    background-color: #EAECE5;
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1800px;
+}
+
+#merchan i{
+    margin-right: 5px;
+    color: #247BA0;
+}
+
+
+/* Third Section */
+
+#video-center{
+    max-width: 1800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 70px 0;    
+}
+
+#text{
+    text-align: justify;
+}
+
+#text h2{
+    color: #247BA0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 20px;;
+}
+
+/* Fourth Section */
+
+#cards{
+    background-color: #247BA0;
+}
+
+#cards-center{
+    background-color: #247BA0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0 50px 0;
+    max-width: 1800px;
+}
+
+
+#cards-center i{
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 60px;
+}
+
+#cards-center i:hover:not(.offline){
+    transform: translateY(-7px);
+}
+
+#cards-center .offline{
+    color: #a1a1a1;
+    cursor: not-allowed;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    background-color: #EAECE5;
+    width: 500px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card span{
+    margin-top: 10px;
+    display: block;
+    font-weight: bolder;
+}
+
+.invisible{
+    display: none;
+}
+
+
+#page{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.circle{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;   
+    cursor: pointer; 
+}
+
+.notInPage{
+    background-color: #a1a1a1;;
+}

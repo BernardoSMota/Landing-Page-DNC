@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <a href="https://google.com/" ><img src="assets/images/logo.svg" alt="DNC Logo" id="logo"></a>
+        <h1>Dê os primeiros passos da<br>
+            sua carreira em Tecnologia</h1>
+        <p>Inscreva-se no curso gratuito de Introdução à<br>Tecnologia da DNC School e aprenda os principais<br>fundamentos para construir experiências efetivas.</p>
+    </header>
+
+    <section id="merchan">
+    <section class="merchan-center">
+            <span>
+                <i class="fa-solid fa-certificate"></i>Certificado de conclusão
+            </span>
+            <span>
+                <i class="fa-solid fa-clock"></i>4 horas de conteúdo
+            </span>
+            <span>
+                <i class="fa-solid fa-video"></i>Aulas online gravadas
+            </span>
+    </section>
+    </section>
+    
+    <section id="video">
+        <section id="video-center">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/9o7g4eAl0Bk" title="MEU OMEN virou um DUELISTA nesse GAME!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div id="text">
+                <h2>Aprenda com especialistas e<br>comece seu primeiro projeto</h2>
+                <p>Conheça o processo de desenvolvimento e entenda como utilizar<br>os principais métodos e ferramentas da área para resolver<br>problemas complexos.<br><br>Conquiste seu certificado e desenvolva um projeto prático para<br> aplicar seus conhecimentos.</p>
+            </div>
+        </section>
+    </section>
+
+    <section id="cards">
+        <section id="cards-center">
+
+                <i id="left-arrow" class="fa-solid fa-angle-left fa-2xl offline" onclick="goLeft()"></i>
+
+                <div class="card ">
+                    <img src="https://i.pinimg.com/736x/17/71/d9/1771d94f7218e588422eafec8f78267e.jpg" alt="adsda">
+                    <p>“O curso da DNC School foi o ponto de partida da minha transição de carreira.Hoje já consegui minha primeira vaga na área!”
+                        <span>Bruna, desenvolvedora Front-End</span></p>
+                </div>
+
+                <div class="card">
+                    <img src="https://pm1.aminoapps.com/7920/b7ff846b9523ae39aaad26e6291ab71af4e0f3f1v2_00.jpg" alt="adsda">
+                    <p>“Gostei muito da metodologia e da plataforma da Escola DNC. Os materiais são todos muito bons”
+                        <span>Leonardo, desenvolvedor Back-End</span></p>
+                </div>
+
+                <div class="card invisible">
+                    <img src="https://i.pinimg.com/1200x/d0/5c/a3/d05ca36aa2f2541f04e9bf6a34e54ac1.jpg" alt="adsda">
+                    <p>“O curso da foi a mudança que eu precisava para alcançar meus objetivos profissionais”
+                        <span>Samantha, desenvolvedora Front-End</span></p>
+                </div>
+
+                <i id="right-arrow" class="fa-solid fa-angle-right fa-2xl" onclick="goRight()"></i>
+            
+            </section>
+            <div id="page">
+                <div class="circle" onclick="goLeft()"></div>
+                <div class="circle notInPage" onclick="goRight()"></div>
+            </div>
+    </section>
+    <script src="https://kit.fontawesome.com/1c1371ef50.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
